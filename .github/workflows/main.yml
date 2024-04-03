@@ -2,11 +2,12 @@ name: Workflow testing
 
 on:
  workflow_dispatch:
-
  push:
     branches: [ "main" ]
  pull_request:
     branches: [ "main" ]
+ issues:
+    types: [opened, edited]
 
 jobs:
   experimental-greet:
