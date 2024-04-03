@@ -15,8 +15,8 @@ jobs:
       - name: Greet the User
         run: echo "Hello World!"
       - name: Show directory before checkout
-        run: ls -1
+        run: ls -l
       - name: Checkout our code  
         uses: actions/checkout@v2
       - name: Show directory sfter checkout  
-        run: ls -1
+        run: ls -l
